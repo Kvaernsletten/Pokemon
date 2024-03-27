@@ -39,9 +39,9 @@ let pokemonList = [
 ];
 
 let selectedPokemon = {
-  name: "Bulbasaur",
-  image: "imgs/Pokemon/Bulbasaur.png",
-  description: "No information",
+  name: "???",
+  image: "imgs/Pokemon/Unknown.png",
+  description: "No information on this Pokémon",
   type1: "None",
   type2: "None",
 }
