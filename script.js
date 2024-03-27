@@ -5,7 +5,7 @@ let app = document.getElementById('app');
 let player = {
 
   name: "Red",
-  image: "/imgs/E_Red_Back.png",
+  image: "imgs/E_Red_Back.png",
   caughtPokemon: [Bulbasaur],
 
 }
