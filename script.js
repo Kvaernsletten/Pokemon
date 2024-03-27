@@ -7,7 +7,6 @@ let player = {
   name: "Red",
   image: "imgs/E_Red_Back.png",
   caughtPokemon: [Bulbasaur],
-
 }
 
 let pokemonList = [
@@ -41,7 +40,7 @@ let pokemonList = [
 
 let selectedPokemon = {
   name: "Bulbasaur",
-  image: "/imgs/Pokemon/Bulbasaur.png",
+  image: "imgs/Pokemon/Bulbasaur.png",
   description: "No information",
   type1: "None",
   type2: "None",
@@ -61,7 +60,7 @@ function updateView() {
   app.innerHTML = /*HTML*/ `
     <div class="container">
       <div class="opposingPokemon">
-          <div class="opposingPokemonName"><img src='${player.caughtPokemon.indexOf(randomPokemon) != -1 ? "/imgs/pokeball.png" : "/imgs/pokeball_darkened.png"}'>${randomPokemon.name}</div>
+          <div class="opposingPokemonName"><img src='${player.caughtPokemon.indexOf(randomPokemon) != -1 ? "imgs/pokeball.png" : "imgs/pokeball_darkened.png"}'>${randomPokemon.name}</div>
           <div>Lv: ${randomPokemon.level}</div>
           <img src="${randomPokemon.image}">
       </div>
@@ -124,7 +123,7 @@ function showPokedex() {
   pokedexList = "";
   for (i = 0; i < pokemonList.length; i++) {
     pokedexList += /*HTML*/`<div class="pokedexListName ${pokemonList[i].viewingInPokedex ? 'selectedColor' : ''}" ${pokemonList[i].isCaught == 1 ? "onclick='viewPokemon(" + i + ")'" : "onclick='notCaughtPokemon(" + i + ")'"}>
-    <img src='${pokemonList[i].isCaught == 1 ? "/imgs/pokeball.png" : "/imgs/pokeball_darkened.png"}'>${pokemonList[i].isCaught == 1 ? pokemonList[i].name : "???"}</div>`
+    <img src='${pokemonList[i].isCaught == 1 ? "imgs/pokeball.png" : "imgs/pokeball_darkened.png"}'>${pokemonList[i].isCaught == 1 ? pokemonList[i].name : "???"}</div>`
   }
   updatePokedexView();
 }
@@ -139,8 +138,8 @@ function updatePokedexView() {
         <div class="pokedexName">${selectedPokemon.name}</div>
         <div class="pokedexImage"><img src="${selectedPokemon.image}"></div>
           <div class="typeContainer">
-            <div class="type1"><img src="/imgs/Type/${selectedPokemon.type1}.png"></div>
-            <div class="type2"><img src="/imgs/Type/${selectedPokemon.type2}.png"></div>
+            <div class="type1"><img src="imgs/Type/${selectedPokemon.type1}.png"></div>
+            <div class="type2"><img src="imgs/Type/${selectedPokemon.type2}.png"></div>
           </div>
         <div class="pokemonDescription">${selectedPokemon.description}</div>
       </div>
@@ -176,7 +175,7 @@ function viewPokemon(i) {
 function notCaughtPokemon(i){
   pokedexListScrollPosition = document.querySelector('.pokedexList').scrollTop;
   selectedPokemon.name = "???";
-  selectedPokemon.image = "/imgs/Pokemon/Unknown.png";
+  selectedPokemon.image = "imgs/Pokemon/Unknown.png";
   selectedPokemon.description = "No information on this Pokémon";
   selectedPokemon.type1 = "None";
   selectedPokemon.type2 = "None";
