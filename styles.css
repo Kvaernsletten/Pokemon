@@ -15,6 +15,7 @@ html::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: rgb(205, 202, 50);
 }
 
 
