@@ -12,22 +12,46 @@ html::-webkit-scrollbar {
 
 #app {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 98vh;
   width: 98vw;
   font-size: 32px;
 }
-
-.opposingPokemon {
-  margin-left: 50%;
+.container{
+  width: 680px;
+  height: 383px;
+  background-image: url("imgs/BattleBackground.gif");
+  background-repeat: no-repeat;
+  border: 5px solid black;
+}
+.menuContainer{
+  border: 5px solid black;
+  border-top: none;
+  width: 680px;
+  height: 120px;
 }
 
-.opposingPokemonName{
+.topScreen {
+  height: 60%;
+  width: 680px;
+}
+.opposingPokemonImage{
   display: flex;
-  flex-direction: row;
-  image-rendering: pixelated;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 140px;
 }
+
+.bottomScreen {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 40%;
+  width: 680px;
+}
+
 .opposingPokemonName > img{
   height: 32px;
   width: 32px;
@@ -50,12 +74,6 @@ img {
   height: 150px;
 }
 
-.bottomScreen {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: row;
-}
 
 .caughtContainer {
   display: flex;

@@ -59,27 +59,32 @@ updateView();
 function updateView() {
   app.innerHTML = /*HTML*/ `
     <div class="container">
-      <div class="opposingPokemon">
-          <div class="opposingPokemonName"><img src='${player.caughtPokemon.indexOf(randomPokemon) != -1 ? "imgs/pokeball.png" : "imgs/pokeball_darkened.png"}'>${randomPokemon.name}</div>
+      <div class="topScreen">
+      <div class="opposingPokemonInfo">
+        <div class="opposingPokemonName"><img src='${player.caughtPokemon.indexOf(randomPokemon) != -1 ? "imgs/pokeball.png" : "imgs/pokeball_darkened.png"}'>${randomPokemon.name}</div>
           <div>Lv: ${randomPokemon.level}</div>
+          </div>
+          <div class="opposingPokemonImage">
           <img src="${randomPokemon.image}">
+          </div>
+          
       </div>
       
       <div class="bottomScreen">
-          <div class="player">
+          <div class="playerInfo">
               <img class="playerInBattle" src="${pokemonInBattle ? player.caughtPokemon[player.caughtPokemon.length - 1].imageBack : player.image}">
               <div>${pokemonInBattle ? player.caughtPokemon[player.caughtPokemon.length - 1].name : player.name}</div>
           </div>
-  
-          <div class="buttonContainer">
+      </div>
+    </div>
+    <div class="menuContainer">          
+      <div class="buttonContainer">
               <button onclick="choosePokemon()">Choose pokémon to battle</button>    
               <button onclick="catchPokemon()">Catch pokémon</button>    
               <button onclick="getRandomPokemon()">Find new pokémon</button>
               <button onclick="showPokedex()">Pokédex</button>       
           </div>
-  
-      </div>
-    </div>
+        </div>
     `;
 }
 
