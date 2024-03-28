@@ -117,7 +117,7 @@ img {
   flex-direction: row;
   height: 380px;
   width: 680px;
-  background-color: rgb(150, 0, 0);
+  background-color: rgb(131, 0, 0);
   border: 5px solid black;
 }
 .pokedexRow1{
@@ -153,6 +153,7 @@ img {
 .pokedexListName{
   display: flex;
   font-weight: 700;
+  color: rgb(205, 202, 50);
   align-items: center;
   border-bottom: 2px solid black;
 }
