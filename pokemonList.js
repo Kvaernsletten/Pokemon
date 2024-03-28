@@ -9,6 +9,7 @@ let Bulbasaur = {
     type1: "Grass",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Ivysaur = {
@@ -16,12 +17,13 @@ let Ivysaur = {
     health: 70,
     image: "imgs/Pokemon/Ivysaur.png",
     imageBack: "imgs/PokemonBack/Ivysaur.png",
-    level: 5,
+    level: 11,
     isCaught: false,
     description: "The bud on its back grows by drawing energy. It gives off an aroma when it is ready to bloom.",
     type1: "Grass",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Venusaur = {
@@ -29,12 +31,13 @@ let Venusaur = {
     health: 70,
     image: "imgs/Pokemon/Venusaur.png",
     imageBack: "imgs/PokemonBack/Venusaur.png",
-    level: 5,
+    level: 39,
     isCaught: false,
     description: "The flower on its back catches the sun’s rays. The sunlight is then absorbed and used for energy.",
     type1: "Grass",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Charmander = {
@@ -48,6 +51,7 @@ let Charmander = {
     type1: "Fire",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Charmeleon = {
@@ -55,12 +59,13 @@ let Charmeleon = {
     health: 70,
     image: "imgs/Pokemon/Charmeleon.png",
     imageBack: "imgs/PokemonBack/Charmeleon.png",
-    level: 5,
+    level: 12,
     isCaught: false,
     description: "Tough fights could excite this Pokémon. When excited, it may breathe out bluish-white flames.",
     type1: "Fire",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Charizard = {
@@ -68,12 +73,13 @@ let Charizard = {
     health: 70,
     image: "imgs/Pokemon/Charizard.png",
     imageBack: "imgs/PokemonBack/Charizard.png",
-    level: 5,
+    level: 43,
     isCaught: false,
     description: "When this Pokémon expels a blast of superhot fire, the red flame at the tip of its tails burns more intensely.",
     type1: "Fire",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Squirtle = {
@@ -87,6 +93,7 @@ let Squirtle = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Wartortle = {
@@ -94,12 +101,13 @@ let Wartortle = {
     health: 70,
     image: "imgs/Pokemon/Wartortle.png",
     imageBack: "imgs/PokemonBack/Wartortle.png",
-    level: 5,
+    level: 9,
     isCaught: false,
     description: "When tapped on its head, this Pokémon will pull it in, but its tail will stick out a little bit.",
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Blastoise = {
@@ -107,12 +115,13 @@ let Blastoise = {
     health: 70,
     image: "imgs/Pokemon/Blastoise.png",
     imageBack: "imgs/PokemonBack/Blastoise.png",
-    level: 5,
+    level: 40,
     isCaught: false,
     description: "Once it takes aim at its enemy, it blasts out water with even more force than a fire hose.",
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Caterpie = {
@@ -126,6 +135,7 @@ let Caterpie = {
     type1: "Bug",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Metapod = {
@@ -139,6 +149,7 @@ let Metapod = {
     type1: "Bug",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Butterfree = {
@@ -152,6 +163,7 @@ let Butterfree = {
     type1: "Bug",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Weedle = {
@@ -165,6 +177,7 @@ let Weedle = {
     type1: "Bug",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Kakuna = {
@@ -178,6 +191,7 @@ let Kakuna = {
     type1: "Bug",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Beedrill = {
@@ -191,6 +205,7 @@ let Beedrill = {
     type1: "Bug",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Pidgey = {
@@ -204,6 +219,7 @@ let Pidgey = {
     type1: "Normal",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Pidgeotto = {
@@ -217,6 +233,7 @@ let Pidgeotto = {
     type1: "Normal",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Pidgeot = {
@@ -230,6 +247,7 @@ let Pidgeot = {
     type1: "Normal",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Rattata = {
@@ -243,6 +261,7 @@ let Rattata = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Raticate = {
@@ -256,6 +275,7 @@ let Raticate = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Spearow = {
@@ -269,6 +289,7 @@ let Spearow = {
     type1: "Normal",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Fearow = {
@@ -282,6 +303,7 @@ let Fearow = {
     type1: "Normal",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Ekans = {
@@ -295,6 +317,7 @@ let Ekans = {
     type1: "Poison",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Arbok = {
@@ -308,6 +331,7 @@ let Arbok = {
     type1: "Poison",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Pikachu = {
@@ -321,6 +345,7 @@ let Pikachu = {
     type1: "Electric",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Raichu = {
@@ -334,6 +359,7 @@ let Raichu = {
     type1: "Electric",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Sandshrew = {
@@ -347,6 +373,7 @@ let Sandshrew = {
     type1: "Ground",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Sandslash = {
@@ -360,6 +387,7 @@ let Sandslash = {
     type1: "Ground",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Nidoran_F = {
@@ -373,6 +401,7 @@ let Nidoran_F = {
     type1: "Poison",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Nidorina = {
@@ -386,6 +415,7 @@ let Nidorina = {
     type1: "Poison",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Nidoqueen = {
@@ -399,6 +429,7 @@ let Nidoqueen = {
     type1: "Poison",
     type2: "Ground",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Nidoran_M = {
@@ -412,6 +443,7 @@ let Nidoran_M = {
     type1: "Poison",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Nidorino = {
@@ -425,6 +457,7 @@ let Nidorino = {
     type1: "Poison",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Nidoking = {
@@ -438,6 +471,7 @@ let Nidoking = {
     type1: "Poison",
     type2: "Ground",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Clefairy = {
@@ -451,6 +485,7 @@ let Clefairy = {
     type1: "Fairy",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Clefable = {
@@ -464,6 +499,7 @@ let Clefable = {
     type1: "Fairy",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Vulpix = {
@@ -477,6 +513,7 @@ let Vulpix = {
     type1: "Fire",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Ninetales = {
@@ -490,6 +527,7 @@ let Ninetales = {
     type1: "Fire",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Jigglypuff = {
@@ -503,6 +541,7 @@ let Jigglypuff = {
     type1: "Normal",
     type2: "Fairy",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Wigglytuff = {
@@ -516,6 +555,7 @@ let Wigglytuff = {
     type1: "Normal",
     type2: "Fairy",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Zubat = {
@@ -529,6 +569,7 @@ let Zubat = {
     type1: "Poison",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Golbat = {
@@ -542,6 +583,7 @@ let Golbat = {
     type1: "Poison",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Oddish = {
@@ -555,6 +597,7 @@ let Oddish = {
     type1: "Grass",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Gloom = {
@@ -568,6 +611,7 @@ let Gloom = {
     type1: "Grass",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Vileplume = {
@@ -581,6 +625,7 @@ let Vileplume = {
     type1: "Grass",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Paras = {
@@ -594,6 +639,7 @@ let Paras = {
     type1: "Bug",
     type2: "Grass",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Parasect = {
@@ -607,6 +653,7 @@ let Parasect = {
     type1: "Bug",
     type2: "Grass",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Venonat = {
@@ -620,6 +667,7 @@ let Venonat = {
     type1: "Bug",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Venomoth = {
@@ -633,6 +681,7 @@ let Venomoth = {
     type1: "Bug",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Diglett = {
@@ -646,6 +695,7 @@ let Diglett = {
     type1: "Ground",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Dugtrio = {
@@ -659,6 +709,7 @@ let Dugtrio = {
     type1: "Ground",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Meowth = {
@@ -672,6 +723,7 @@ let Meowth = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Persian = {
@@ -685,6 +737,7 @@ let Persian = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Psyduck = {
@@ -698,6 +751,7 @@ let Psyduck = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Golduck = {
@@ -711,6 +765,7 @@ let Golduck = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Mankey = {
@@ -724,6 +779,7 @@ let Mankey = {
     type1: "Fighting",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Primeape = {
@@ -737,6 +793,7 @@ let Primeape = {
     type1: "Fighting",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Growlithe = {
@@ -750,6 +807,7 @@ let Growlithe = {
     type1: "Fire",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Arcanine = {
@@ -763,6 +821,7 @@ let Arcanine = {
     type1: "Fire",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Poliwag = {
@@ -776,6 +835,7 @@ let Poliwag = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Poliwhirl = {
@@ -789,6 +849,7 @@ let Poliwhirl = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Poliwrath = {
@@ -802,6 +863,7 @@ let Poliwrath = {
     type1: "Water",
     type2: "Fighting",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Abra = {
@@ -815,6 +877,7 @@ let Abra = {
     type1: "Psychic",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Kadabra = {
@@ -828,6 +891,7 @@ let Kadabra = {
     type1: "Psychic",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Alakazam = {
@@ -841,6 +905,7 @@ let Alakazam = {
     type1: "Psychic",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Machop = {
@@ -854,6 +919,7 @@ let Machop = {
     type1: "Fighting",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Machoke = {
@@ -867,6 +933,7 @@ let Machoke = {
     type1: "Fighting",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Machamp = {
@@ -880,6 +947,7 @@ let Machamp = {
     type1: "Fighting",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Bellsprout = {
@@ -893,6 +961,7 @@ let Bellsprout = {
     type1: "Grass",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Weepinbell = {
@@ -906,6 +975,7 @@ let Weepinbell = {
     type1: "Grass",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Victreebel = {
@@ -919,6 +989,7 @@ let Victreebel = {
     type1: "Grass",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Tentacool = {
@@ -932,6 +1003,7 @@ let Tentacool = {
     type1: "Water",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Tentacruel = {
@@ -945,6 +1017,7 @@ let Tentacruel = {
     type1: "Water",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Geodude = {
@@ -958,6 +1031,7 @@ let Geodude = {
     type1: "Rock",
     type2: "Ground",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Graveler = {
@@ -971,6 +1045,7 @@ let Graveler = {
     type1: "Rock",
     type2: "Ground",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Golem = {
@@ -984,6 +1059,7 @@ let Golem = {
     type1: "Rock",
     type2: "Ground",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Ponyta = {
@@ -997,6 +1073,7 @@ let Ponyta = {
     type1: "Fire",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Rapidash = {
@@ -1010,6 +1087,7 @@ let Rapidash = {
     type1: "Fire",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Slowpoke = {
@@ -1023,6 +1101,7 @@ let Slowpoke = {
     type1: "Water",
     type2: "Psychic",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Slowbro = {
@@ -1036,6 +1115,7 @@ let Slowbro = {
     type1: "Water",
     type2: "Psychic",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Magnemite = {
@@ -1049,6 +1129,7 @@ let Magnemite = {
     type1: "Electric",
     type2: "Steel",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Magneton = {
@@ -1062,6 +1143,7 @@ let Magneton = {
     type1: "Electric",
     type2: "Steel",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Farfetchd = {
@@ -1075,6 +1157,7 @@ let Farfetchd = {
     type1: "Normal",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Doduo = {
@@ -1088,6 +1171,7 @@ let Doduo = {
     type1: "Normal",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Dodrio = {
@@ -1101,6 +1185,7 @@ let Dodrio = {
     type1: "Normal",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Seel = {
@@ -1114,6 +1199,7 @@ let Seel = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Dewgong = {
@@ -1127,6 +1213,7 @@ let Dewgong = {
     type1: "Water",
     type2: "Ice",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Grimer = {
@@ -1140,6 +1227,7 @@ let Grimer = {
     type1: "Poison",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Muk = {
@@ -1153,6 +1241,7 @@ let Muk = {
     type1: "Poison",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Shellder = {
@@ -1166,6 +1255,7 @@ let Shellder = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Cloyster = {
@@ -1179,6 +1269,7 @@ let Cloyster = {
     type1: "Water",
     type2: "Ice",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Gastly = {
@@ -1192,6 +1283,7 @@ let Gastly = {
     type1: "Ghost",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Haunter = {
@@ -1205,6 +1297,7 @@ let Haunter = {
     type1: "Ghost",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Gengar = {
@@ -1218,6 +1311,7 @@ let Gengar = {
     type1: "Ghost",
     type2: "Poison",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Onix = {
@@ -1231,6 +1325,7 @@ let Onix = {
     type1: "Rock",
     type2: "Ground",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Drowzee = {
@@ -1244,6 +1339,7 @@ let Drowzee = {
     type1: "Psychic",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Hypno = {
@@ -1257,6 +1353,7 @@ let Hypno = {
     type1: "Psychic",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Krabby = {
@@ -1270,6 +1367,7 @@ let Krabby = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Kingler = {
@@ -1283,6 +1381,7 @@ let Kingler = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Voltorb = {
@@ -1296,6 +1395,7 @@ let Voltorb = {
     type1: "Electric",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Electrode = {
@@ -1309,6 +1409,7 @@ let Electrode = {
     type1: "Electric",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Exeggcute = {
@@ -1322,6 +1423,7 @@ let Exeggcute = {
     type1: "Grass",
     type2: "Psychic",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Exeggutor = {
@@ -1335,6 +1437,7 @@ let Exeggutor = {
     type1: "Grass",
     type2: "Psychic",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Cubone = {
@@ -1348,6 +1451,7 @@ let Cubone = {
     type1: "Ground",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Marowak = {
@@ -1361,6 +1465,7 @@ let Marowak = {
     type1: "Ground",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Hitmonlee = {
@@ -1374,6 +1479,7 @@ let Hitmonlee = {
     type1: "Fighting",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Hitmonchan = {
@@ -1387,6 +1493,7 @@ let Hitmonchan = {
     type1: "Fighting",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Lickitung = {
@@ -1400,6 +1507,7 @@ let Lickitung = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Koffing = {
@@ -1413,6 +1521,7 @@ let Koffing = {
     type1: "Poison",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Weezing = {
@@ -1426,6 +1535,7 @@ let Weezing = {
     type1: "Poison",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
   let Rhyhorn = {
@@ -1439,6 +1549,7 @@ let Weezing = {
     type1: "Ground",
     type2: "Rock",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
   let Rhydon = {
@@ -1452,6 +1563,7 @@ let Weezing = {
       type1: "Ground",
       type2: "Rock",
       viewingInPokedex: false,
+      encountered: false,
       //addnew
     };
 let Chansey = {
@@ -1465,6 +1577,7 @@ let Chansey = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Tangela = {
@@ -1478,6 +1591,7 @@ let Tangela = {
     type1: "Grass",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Kangaskhan = {
@@ -1491,6 +1605,7 @@ let Kangaskhan = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Horsea = {
@@ -1504,6 +1619,7 @@ let Horsea = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Seadra = {
@@ -1517,6 +1633,7 @@ let Seadra = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Goldeen = {
@@ -1530,6 +1647,7 @@ let Goldeen = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Seaking = {
@@ -1543,6 +1661,7 @@ let Seaking = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Staryu = {
@@ -1556,6 +1675,7 @@ let Staryu = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Starmie = {
@@ -1569,6 +1689,7 @@ let Starmie = {
     type1: "Water",
     type2: "Psychic",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let MrMime = {
@@ -1582,6 +1703,7 @@ let MrMime = {
     type1: "Psychic",
     type2: "Fairy",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Scyther = {
@@ -1595,6 +1717,7 @@ let Scyther = {
     type1: "Bug",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Jynx = {
@@ -1608,6 +1731,7 @@ let Jynx = {
     type1: "Ice",
     type2: "Psychic",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Electabuzz = {
@@ -1621,6 +1745,7 @@ let Electabuzz = {
     type1: "Electric",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Magmar = {
@@ -1634,6 +1759,7 @@ let Magmar = {
     type1: "Fire",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Pinsir = {
@@ -1647,6 +1773,7 @@ let Pinsir = {
     type1: "Bug",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Tauros = {
@@ -1660,6 +1787,7 @@ let Tauros = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Magikarp = {
@@ -1673,6 +1801,7 @@ let Magikarp = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Gyarados = {
@@ -1686,6 +1815,7 @@ let Gyarados = {
     type1: "Water",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Lapras = {
@@ -1699,6 +1829,7 @@ let Lapras = {
     type1: "Water",
     type2: "Ice",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Ditto = {
@@ -1712,6 +1843,7 @@ let Ditto = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Eevee = {
@@ -1725,6 +1857,7 @@ let Eevee = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Vaporeon = {
@@ -1738,6 +1871,7 @@ let Vaporeon = {
     type1: "Water",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Jolteon = {
@@ -1751,6 +1885,7 @@ let Jolteon = {
     type1: "Electric",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Flareon = {
@@ -1764,6 +1899,7 @@ let Flareon = {
     type1: "Fire",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Porygon = {
@@ -1777,6 +1913,7 @@ let Porygon = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Omanyte = {
@@ -1790,6 +1927,7 @@ let Omanyte = {
     type1: "Rock",
     type2: "Water",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Omastar = {
@@ -1803,6 +1941,7 @@ let Omastar = {
     type1: "Rock",
     type2: "Water",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Kabuto = {
@@ -1816,6 +1955,7 @@ let Kabuto = {
     type1: "Rock",
     type2: "Water",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Kabutops = {
@@ -1829,6 +1969,7 @@ let Kabutops = {
     type1: "Rock",
     type2: "Water",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Aerodactyl = {
@@ -1842,6 +1983,7 @@ let Aerodactyl = {
     type1: "Rock",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Snorlax = {
@@ -1855,6 +1997,7 @@ let Snorlax = {
     type1: "Normal",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Articuno = {
@@ -1868,6 +2011,7 @@ let Articuno = {
     type1: "Ice",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Zapdos = {
@@ -1881,6 +2025,7 @@ let Zapdos = {
     type1: "Electric",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Moltres = {
@@ -1894,6 +2039,7 @@ let Moltres = {
     type1: "Fire",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Dratini = {
@@ -1907,6 +2053,7 @@ let Dratini = {
     type1: "Dragon",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Dragonair = {
@@ -1920,6 +2067,7 @@ let Dragonair = {
     type1: "Dragon",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Dragonite = {
@@ -1933,6 +2081,7 @@ let Dragonite = {
     type1: "Dragon",
     type2: "Flying",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Mewtwo = {
@@ -1946,6 +2095,7 @@ let Mewtwo = {
     type1: "Psychic",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };
 let Mew = {
@@ -1959,5 +2109,6 @@ let Mew = {
     type1: "Psychic",
     type2: "None",
     viewingInPokedex: false,
+    encountered: false,
     //addnew
   };

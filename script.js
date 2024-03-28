@@ -55,42 +55,80 @@ let pokedexList = "";
 let pokedexListScrollPosition = 0;
 
 getRandomPokemon();
-updateView();
-function updateView() {
+battleView();
+
+function startscreenView() {
+
+}
+
+function overworldView() {
+
+
+}
+
+function battleView() {
   app.innerHTML = /*HTML*/ `
     <div class="container">
       <div class="topScreen">
-      <div class="opposingPokemonInfo">
-        <div class="opposingPokemonName"><img src='${player.caughtPokemon.indexOf(randomPokemon) != -1 ? "imgs/pokeball.png" : "imgs/pokeball_darkened.png"}'>${randomPokemon.name}</div>
-          <div>Lv: ${randomPokemon.level}</div>
-          </div>
-          <div class="opposingPokemonImage">
-          <img src="${randomPokemon.image}">
-          </div>
-          
+        <div class="opposingPokemonInfo">
+          <div class="opposingPokemonName"><img src='${player.caughtPokemon.indexOf(randomPokemon) != -1 ? "imgs/pokeball.png" : "imgs/pokeball_darkened.png"}'>${randomPokemon.name}</div>
+            <div>Lv: ${randomPokemon.level}</div>
+        </div>
+            <div class="opposingPokemonImage"><img src="${randomPokemon.image}"></div>
       </div>
-      
+          
       <div class="bottomScreen">
-          <div class="playerInfo">
-              <img class="playerInBattle" src="${pokemonInBattle ? player.caughtPokemon[player.caughtPokemon.length - 1].imageBack : player.image}">
-              <div>${pokemonInBattle ? player.caughtPokemon[player.caughtPokemon.length - 1].name : player.name}</div>
-          </div>
+        <div class="playerInfo">
+            <div class="playerImage"><img class="playerInBattle" src="${pokemonInBattle ? player.caughtPokemon[player.caughtPokemon.length - 1].imageBack : player.image}"></div>
+            <div class="playerName">${pokemonInBattle ? player.caughtPokemon[player.caughtPokemon.length - 1].name : player.name}</div>
+            <div class="playerLevel">Lv: ${player.caughtPokemon[player.caughtPokemon.length - 1].level}</div>
+        </div>
       </div>
     </div>
     <div class="menuContainer">          
       <div class="buttonContainer">
-              <button onclick="choosePokemon()">Choose pokémon to battle</button>    
-              <button onclick="catchPokemon()">Catch pokémon</button>    
-              <button onclick="getRandomPokemon()">Find new pokémon</button>
-              <button onclick="showPokedex()">Pokédex</button>       
-          </div>
-        </div>
-    `;
+        <button onclick="choosePokemon()">Choose pokémon to battle</button>    
+        <button onclick="catchPokemon()">Catch pokémon</button>    
+        <button onclick="getRandomPokemon()">Find new pokémon</button>
+        <button onclick="pokedexView()">Pokédex</button>       
+      </div>
+    </div>
+`;
+}
+
+function pokedexView() {
+  createPokedex();
+  app.innerHTML = /*HTML*/`
+          <div>
+          <div class="pokedexContainer">
+            <div class="pokedexRow1">
+              <div class="pokedexRow1Column1">
+                <div class="pokedexName">${selectedPokemon.name}</div>
+                <div class="pokedexImage"><img src="${selectedPokemon.image}"></div>
+                  <div class="typeContainer">
+                    <div class="type1"><img src="imgs/Type/${selectedPokemon.type1}.png"></div>
+                    <div class="type2"><img src="imgs/Type/${selectedPokemon.type2}.png"></div>
+                  </div>
+                <div class="pokemonDescription">${selectedPokemon.description}</div>
+              </div>
+            </div>
+            <div class="pokedexRow2">
+              <div class="pokedexList">${pokedexList}</div>
+            </div>
+          </div> 
+          <div class="menuContainer">          
+          <div class="buttonContainer">  
+                  <button onclick="exitPokedex()">Exit</button>
+              </div>
+            </div>
+               
+          `
 }
 
 function choosePokemon() {
   pokemonInBattle = true;
-  updateView();
+  //NEEDS MORE LOGIC
+  battleView();
 }
 
 function caughtPokemonView() {
@@ -106,6 +144,7 @@ function caughtPokemonView() {
 }
 
 function catchPokemon() {
+  //ADD SUCCESSRATE BASED ON CATCHRATE AND POKEBALL ITEMS
   player.caughtPokemon.push(pokemonList[newPokemon]);
   pokemonList[newPokemon].isCaught = true;
   caughtPokemonView();
@@ -121,44 +160,17 @@ function getRandomPokemon() {
     getRandomPokemon();
   }
   previousPokemon = newPokemon;
-  updateView();
+  battleView();
 }
 
-function showPokedex() {
+function createPokedex() {
   pokedexList = "";
   for (i = 0; i < pokemonList.length; i++) {
     pokedexList += /*HTML*/`<div class="pokedexListName ${pokemonList[i].viewingInPokedex ? 'selectedColor' : ''}" ${pokemonList[i].isCaught == 1 ? "onclick='viewPokemon(" + i + ")'" : "onclick='notCaughtPokemon(" + i + ")'"}>
     <img src='${pokemonList[i].isCaught == 1 ? "imgs/pokeball.png" : "imgs/pokeball_darkened.png"}'>${pokemonList[i].isCaught == 1 ? pokemonList[i].name : "???"}</div>`
+    pokemonList[i].viewingInPokedex = false;
   }
-  updatePokedexView();
 }
-
-function updatePokedexView() {
-
-  app.innerHTML = /*HTML*/`
-  <div>
-  <div class="pokedexContainer">
-    <div class="pokedexRow1">
-      <div class="pokedexRow1Column1">
-        <div class="pokedexName">${selectedPokemon.name}</div>
-        <div class="pokedexImage"><img src="${selectedPokemon.image}"></div>
-          <div class="typeContainer">
-            <div class="type1"><img src="imgs/Type/${selectedPokemon.type1}.png"></div>
-            <div class="type2"><img src="imgs/Type/${selectedPokemon.type2}.png"></div>
-          </div>
-        <div class="pokemonDescription">${selectedPokemon.description}</div>
-      </div>
-    </div>
-    <div class="pokedexRow2">
-      <div class="pokedexList">${pokedexList}</div>
-    </div>
-  </div> 
-  <button onclick="updateView()">Close pokédex</button> 
-  </div>
-       
-  `
-}
-
 
 function viewPokemon(i) {
   pokedexListScrollPosition = document.querySelector('.pokedexList').scrollTop;
@@ -171,13 +183,12 @@ function viewPokemon(i) {
   pokemonList[previousSelectedPokemon].viewingInPokedex = false;
   pokemonList[i].viewingInPokedex = true;
   previousSelectedPokemon = i;
-  showPokedex();
-  updatePokedexView();
+  pokedexView();
   document.querySelector('.pokedexList').scrollTop = pokedexListScrollPosition;
 
 }
 
-function notCaughtPokemon(i){
+function notCaughtPokemon(i) {
   pokedexListScrollPosition = document.querySelector('.pokedexList').scrollTop;
   selectedPokemon.name = "???";
   selectedPokemon.image = "imgs/Pokemon/Unknown.png";
@@ -189,7 +200,15 @@ function notCaughtPokemon(i){
   pokemonList[i].viewingInPokedex = true;
   previousSelectedPokemon = i;
 
-  showPokedex();
-  updatePokedexView();
+  pokedexView();
   document.querySelector('.pokedexList').scrollTop = pokedexListScrollPosition;
+}
+
+function exitPokedex() {
+  selectedPokemon.name = "???";
+  selectedPokemon.image = "imgs/Pokemon/Unknown.png";
+  selectedPokemon.description = "No information on this Pokémon";
+  selectedPokemon.type1 = "None";
+  selectedPokemon.type2 = "None";
+  battleView();
 }
