@@ -22,7 +22,10 @@ html::-webkit-scrollbar {
 .startScreenMenuContainer {
   display: flex;
   justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  font-size: 120%;
+  font-style: bold;
   background-color: rgb(54, 54, 54);
   color: rgb(205, 202, 50);
   border: 5px solid black;
@@ -30,13 +33,14 @@ html::-webkit-scrollbar {
   width: 680px;
   height: 120px;
 }
-
+.startGameText{
+  margin-left: 40px;
+}
 .startScreenButtonContainer {
   width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 22px;
 }
 
 .topStartScreen {
@@ -50,6 +54,7 @@ html::-webkit-scrollbar {
   width: 150px;
   height: 150px;
   margin-top: 10px;
+  background-color: rgba(54, 14, 14, 0.623);
   border: 5px solid black;
 }
 

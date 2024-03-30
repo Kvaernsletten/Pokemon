@@ -72,10 +72,12 @@ function startscreenView() {
     </div>
 
     <div class="startScreenMenuContainer">
-      <div class="startScreenButtonContainer">
-      ${selectedPokemon.image != "imgs/Pokemon/Unknown.png" ? `<button onclick="startGame()">Start game</button>` : ``}
+      <div class="startGameText">
+        ${selectedPokemon.image != "imgs/Pokemon/Unknown.png" ? `Start game with ${selectedPokemon.name} as your starter Pokémon?` : `Choose your starter Pokémon`}
       </div>
-      ${selectedPokemon.image != "imgs/Pokemon/Unknown.png" ? `with ${selectedPokemon.name} as your starter Pokémon?` : ``}
+      <div class="startScreenButtonContainer">
+      ${selectedPokemon.image != "imgs/Pokemon/Unknown.png" ? `<button onclick="startGame()">Start game</button>` : `<button disabled onclick="startGame()">Start game</button>`}
+      </div>
     </div>
   `
 }
