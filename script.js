@@ -41,12 +41,14 @@ let pokemonList = [
 let selectedPokemon = {
   name: "???",
   image: "imgs/Pokemon/Unknown.png",
+  imageBack: "imgs/Pokemon/Unknown.png",
   description: "No information on this Pokémon",
   type1: "None",
   type2: "None",
+  level: "",
 }
-let previousSelectedPokemon = 0;
 
+let previousSelectedPokemon = 0;
 let pokemonInBattle = false;
 let randomPokemon;
 let newPokemon;
@@ -100,16 +102,15 @@ function battleView() {
           
       <div class="bottomScreen">
         <div class="playerInfo">
-            <div class="playerImage"><img class="playerInBattle" src="${pokemonInBattle ? player.caughtPokemon[player.caughtPokemon.length - 1].imageBack : player.image}"></div>
-            <div class="playerName">${pokemonInBattle ? player.caughtPokemon[player.caughtPokemon.length - 1].name : player.name}</div>
-            <div class="playerLevel">Lv: ${player.caughtPokemon[player.caughtPokemon.length - 1].level}</div>
+            <div class="playerImage"><img class="playerInBattle" src="${player.image}"></div>
+            <div class="playerName">${player.name}</div>
+            ${pokemonInBattle ? `<div class="playerLevel">Lv: ${player.level}</div>` : ``};
         </div>
       </div>
     </div>
 
     <div class="battleMenuContainer">          
-      <div class="battleButtonContainer">
-        <button onclick="choosePokemon()">Choose pokémon to battle</button>    
+      <div class="battleButtonContainer">    
         <button onclick="catchPokemon()" >Catch pokémon</button>    
         <button onclick="getRandomPokemon()">Find new pokémon</button>
         <button onclick="pokedexView()">Pokédex</button>       
@@ -162,8 +163,9 @@ function pokedexView() {
       </div>
     </div> 
     <div class="pokedexMenuContainer">          
-      <div class="pokedexButtonContainer">  
+      <div class="pokedexButtonContainer">
       <button onclick="clearPokedex(); battleView();">Exit</button>
+      ${selectedPokemon.name != "???" ? `<button onclick="choosePokemon();">Send out Pokémon</button>` : ``};  
       </div>
     </div>
                
@@ -204,8 +206,13 @@ function startGame(){
 }
 
 function choosePokemon() {
+  
   pokemonInBattle = true;
+  player.name = selectedPokemon.name;
+  player.image = selectedPokemon.imageBack;
+  player.level = selectedPokemon.level;
   //NEEDS MORE LOGIC
+  clearPokedex();
   battleView();
 }
 
@@ -243,9 +250,11 @@ function viewPokemon(i) {
   pokedexListScrollPosition = document.querySelector('.pokedexList').scrollTop;
   selectedPokemon.name = pokemonList[i].name;
   selectedPokemon.image = pokemonList[i].image;
+  selectedPokemon.imageBack = pokemonList[i].imageBack;
   selectedPokemon.description = pokemonList[i].description;
   selectedPokemon.type1 = pokemonList[i].type1;
   selectedPokemon.type2 = pokemonList[i].type2;
+  selectedPokemon.level = pokemonList[i].level;
 
   pokemonList[previousSelectedPokemon].viewingInPokedex = false;
   pokemonList[i].viewingInPokedex = true;
@@ -257,11 +266,7 @@ function viewPokemon(i) {
 
 function notCaughtPokemon(i) {
   pokedexListScrollPosition = document.querySelector('.pokedexList').scrollTop;
-  selectedPokemon.name = "???";
-  selectedPokemon.image = "imgs/Pokemon/Unknown.png";
-  selectedPokemon.description = "No information on this Pokémon";
-  selectedPokemon.type1 = "None";
-  selectedPokemon.type2 = "None";
+  clearPokedex();
 
   pokemonList[previousSelectedPokemon].viewingInPokedex = false;
   pokemonList[i].viewingInPokedex = true;
@@ -274,6 +279,7 @@ function notCaughtPokemon(i) {
 function clearPokedex() {
   selectedPokemon.name = "???";
   selectedPokemon.image = "imgs/Pokemon/Unknown.png";
+  selectedPokemon.imageBack = "imgs/Pokemon/Unknown.png";
   selectedPokemon.description = "No information on this Pokémon";
   selectedPokemon.type1 = "None";
   selectedPokemon.type2 = "None";
