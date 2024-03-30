@@ -88,7 +88,7 @@ function battleView() {
     <div class="menuContainer">          
       <div class="buttonContainer">
         <button onclick="choosePokemon()">Choose pokémon to battle</button>    
-        <button onclick="catchPokemon()">Catch pokémon</button>    
+        <button onclick="catchPokemon()" >Catch pokémon</button>    
         <button onclick="getRandomPokemon()">Find new pokémon</button>
         <button onclick="pokedexView()">Pokédex</button>       
       </div>
@@ -148,6 +148,7 @@ function catchPokemon() {
   player.caughtPokemon.push(pokemonList[newPokemon]);
   pokemonList[newPokemon].isCaught = true;
   caughtPokemonView();
+
 }
 
 
