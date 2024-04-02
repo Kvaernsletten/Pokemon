@@ -104,7 +104,7 @@ function battleView() {
       <div class="playerImage"><img class="playerInBattle" src="${player.image}"></div>
         <div class="playerInfo">
           <div class="playerName">${player.name}</div>
-          ${pokemonInBattle ? `<div class="playerLevel">Lv: ${player.level}</div>` : ``};
+          ${pokemonInBattle ? `<div class="playerLevel">Lv: ${player.level}</div>` : ``}
         </div>
       </div>
     </div>
